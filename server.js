@@ -15,6 +15,7 @@ app.use(fileUpload({
 }));
 
 app.use('/user', require('./routes/userRouter'));
+app.use('/api', require('./routes/upload'));
 
 const url = process.env.URL;
 mongoose.connect(url, {
